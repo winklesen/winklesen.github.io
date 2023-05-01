@@ -9,7 +9,7 @@ import Link from "components/Link";
 
 export default function NewsletterPage() {
   const { query } = useRouter();
-  const seoTitle = "Newsletter | winklesen Kraft";
+  const seoTitle = "Newsletter | winklesen ";
   const seoDesc =
     "A newsletter in the realm between design & development. Learn animations, CSS, web development tips & tricks and creating delightful and useful interfaces!";
 
@@ -20,9 +20,9 @@ export default function NewsletterPage() {
         description={seoDesc}
         openGraph={{
           title: seoTitle,
-          url: `https://winklesenkraft.com/newsletter/`,
+          url: `https://winklesen.com/newsletter/`,
           description: seoDesc,
-          site_name: "winklesen Kraft",
+          site_name: "winklesen ",
         }}
         twitter={{
           cardType: "summary_large_image",

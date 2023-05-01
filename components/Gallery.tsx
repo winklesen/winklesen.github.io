@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import cn from "clsx";
 import localFont from "@next/font/local";
 
-import imageGotland from "public/gallery/gotland.jpg";
-import imageRun from "public/gallery/running.jpg";
-import imageSkate from "public/gallery/skate.jpg";
-import imageTrailrun from "public/gallery/trailrun.jpg";
+// import imageGotland from "public/gallery/gotland.jpg";
+// import imageRun from "public/gallery/running.jpg";
+// import imageSkate from "public/gallery/skate.jpg";
+// import imageTrailrun from "public/gallery/trailrun.jpg";
 import { ReactNode } from "react";
 import Activity, { ActivityType } from "./Activity";
 import Link from "./Link";
@@ -143,10 +143,10 @@ export default function Gallery({
   return (
     <>
       <section className="flex gap-4 h-[268px] relative">
-        <Photo
+        {/* <Photo
           src={imageGotland}
           meta="2021-07-12"
-          alt="winklesen Kraft in Gotland"
+          alt="winklesen  in Gotland"
           width={314}
           height={229}
           rotate={-6}
@@ -173,7 +173,7 @@ export default function Gallery({
           rotate={-5.4}
           left={343}
           index={3}
-        />
+        /> */}
         {lastActivity.photos ? (
           <Photo
             src={lastActivity.photos.primary.urls["600"]}
@@ -200,7 +200,7 @@ export default function Gallery({
           </Photo>
         ) : (
           <Photo
-            src={imageTrailrun}
+            src={''}
             meta="2022-09-10"
             alt={"Trail Run view"}
             width={190}

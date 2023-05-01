@@ -14,9 +14,9 @@ type ProjectProps = {
 };
 
 export default function Project({ project, rest }: ProjectProps) {
-  const seoTitle = `${project.title} Case Study | winklesen Kraft`;
+  const seoTitle = `${project.title} Case Study | winklesen `;
   const seoDesc = `${project.description}`;
-  const url = `https://winklesenkraft.com/project/${project.slug}`;
+  const url = `https://winklesen.com/project/${project.slug}`;
   const Component = useMDXComponent(project.body.code);
 
   return (
@@ -34,7 +34,7 @@ export default function Project({ project, rest }: ProjectProps) {
           description: seoDesc,
           images: [
             {
-              url: `https://og-image.winklesenkraft.vercel.app/${encodeURIComponent(
+              url: `https://og-image.winklesen.vercel.app/${encodeURIComponent(
                 project.title
               )}?desc=${encodeURIComponent("Case study")}&theme=dark.png`,
               alt: project.title,

@@ -1,23 +1,23 @@
 import { DefaultSeo } from "next-seo";
 
 const config = {
-  title: "winklesen Kraft - Design engineer",
-  description: "I design & build interfaces",
+  title: "Samuel Bernard Jeffersen",
+  description: "I develop Mobile Application",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://winklesenkraft.com",
-    site_name: "winklesen Kraft",
+    url: "https://winklesen.com",
+    site_name: "winklesen ",
     images: [
       {
-        url: "https://winklesenkraft.com/og.jpg",
-        alt: "winklesen Kraft",
+        url: "https://winklesen.com/",
+        alt: "winklesen ",
       },
     ],
   },
   twitter: {
-    handle: "@winklesenkraft",
-    site: "@winklesenkraft",
+    handle: "@winklesen",
+    site: "@winklesen",
     cardType: "summary_large_image",
   },
 };

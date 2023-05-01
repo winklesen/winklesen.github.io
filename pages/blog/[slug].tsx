@@ -21,9 +21,9 @@ type PostProps = {
 };
 
 export default function Post({ post, related }: PostProps) {
-  const seoTitle = `${post.title} | winklesen Kraft`;
+  const seoTitle = `${post.title} | winklesen `;
   const seoDesc = `${post.summary}`;
-  const url = `https://winklesenkraft.com/blog/${post.slug}`;
+  const url = `https://winklesen.com/blog/${post.slug}`;
   const Component = useMDXComponent(post.body.code);
 
   return (
@@ -39,19 +39,19 @@ export default function Post({ post, related }: PostProps) {
           images: [
             {
               url: post.og
-                ? `https://winklesenkraft.com${post.og}`
-                : `https://og-image.winklesenkraft.vercel.app/${encodeURIComponent(
+                ? `https://winklesen.com${post.og}`
+                : `https://og-image.winklesen.vercel.app/${encodeURIComponent(
                     post.title
                   )}?desc=${encodeURIComponent(seoDesc)}&theme=dark.png`,
               alt: post.title,
             },
           ],
-          site_name: "winklesen Kraft",
+          site_name: "winklesen ",
           type: "article",
           article: {
             publishedTime: post.publishedAt,
             modifiedTime: post.updatedAt,
-            authors: ["https://winklesenkraft.com"],
+            authors: ["https://winklesen.com"],
           },
         }}
       />

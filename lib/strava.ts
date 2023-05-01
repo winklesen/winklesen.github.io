@@ -36,9 +36,7 @@ export const getActivities = async () => {
   );
   const json = await response.json();
 
-  const publicActivities = json.filter(
-    (activity: ActivityType) => activity.visibility === "everyone"
-  );
+  const publicActivities = json;
 
   return publicActivities;
 };

@@ -5,10 +5,10 @@ export type ActivityType = {
   name: string;
   start_date: string;
   moving_time: number;
-  sport_type: "Swim" | "Run" | "Bike" | "Hike" | "TrailRun" | "VirtualRide";
+  sport_type: "";
   distance: number;
   average_speed: number;
-  visibility: "everyone" | "followers" | "me";
+  visibility: "";
   map: {
     summary_polyline: string;
   };
@@ -26,26 +26,26 @@ const getSpeedForSportType = (
   custom?: string
 ) => {
   switch (sportType) {
-    case "Swim":
-      return {
-        name: "Per 100m",
-        // m/s to min/100m
-        value: custom,
-      };
-    case "Run":
-    case "TrailRun":
-      const pace = 1 / (speed * 0.06);
-      return {
-        name: "Per km",
-        // m/s to min/km
-        value: `${Math.floor(pace)}’${Math.floor((pace % 1) * 60)}”`,
-      };
-    default:
-      return {
-        name: "Km/h",
-        // m/s to km/h
-        value: `${(speed * 3.6).toFixed(1)}`,
-      };
+    // case "Swim":
+    //   return {
+    //     name: "Per 100m",
+    //     // m/s to min/100m
+    //     value: custom,
+    //   };
+    // case "Run":
+    // case "TrailRun":
+    //   const pace = 1 / (speed * 0.06);
+    //   return {
+    //     name: "Per km",
+    //     // m/s to min/km
+    //     value: `${Math.floor(pace)}’${Math.floor((pace % 1) * 60)}”`,
+    //   };
+    // default:
+    //   return {
+    //     name: "Km/h",
+    //     // m/s to km/h
+    //     value: `${(speed * 3.6).toFixed(1)}`,
+    //   };
   }
 };
 
@@ -93,7 +93,7 @@ export default function Activity({ activity }: { activity: ActivityType }) {
 
       <div className="absolute bottom-0 right-0 w-full h-full radial-fade" />
       <footer className="flex flex-col justify-center items-end gap-1 px-3 pb-3.5 z-10">
-        {stats.map((stat) => (
+        {/* {stats.map((stat) => (
           <div
             className="flex flex-col gap-0 text-right text-white"
             key={stat.name}
@@ -103,7 +103,7 @@ export default function Activity({ activity }: { activity: ActivityType }) {
               {stat.name}
             </p>
           </div>
-        ))}
+        ))} */}
       </footer>
     </div>
   );

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://winklesenkraft.com/sitemap.xml
+Sitemap: https://winklesen.com/sitemap.xml

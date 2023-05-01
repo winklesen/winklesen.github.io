@@ -221,9 +221,9 @@ const items = [
 
 export default function Playground() {
   const title = "Radial Menu";
-  const seoTitle = `${title} | winklesen Kraft`;
+  const seoTitle = `${title} | winklesen `;
   const desc = `Fun interaction from Pinterest on iOS built with Framer Motion`;
-  const url = `https://winklesenkraft.com/playground/radial-menu`;
+  const url = `https://winklesen.com/playground/radial-menu`;
   return (
     <>
       <NextSeo
@@ -236,7 +236,7 @@ export default function Playground() {
           description: desc,
           images: [
             {
-              url: `https://og-image.winklesenkraft.vercel.app/${encodeURIComponent(
+              url: `https://og-image.winklesen.vercel.app/${encodeURIComponent(
                 title
               )}?desc=${encodeURIComponent(desc)}&theme=dark.png`,
               alt: title,

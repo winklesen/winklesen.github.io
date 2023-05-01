@@ -20,7 +20,7 @@ export default function Home({ posts, projects }: HomeProps) {
     <>
       <div className="flex flex-col gap-20 md:gap-28">
         <div>
-          <h1 className="animate-in">winklesen Kraft</h1>
+          <h1 className="animate-in">Samuel Bernard Jeffersen</h1>
           <p
             className="text-secondary animate-in"
             style={{ "--index": 1 } as React.CSSProperties}
@@ -34,7 +34,7 @@ export default function Home({ posts, projects }: HomeProps) {
         >
           <h2>Selected projects</h2>
           <ul className="flex flex-col gap-16">
-            {projects.map((project) => (
+            {/* {projects.map((project) => (
               <li key={project.title}>
                 <Section heading={project.time}>
                   <div className="flex flex-col gap-5">
@@ -53,7 +53,7 @@ export default function Home({ posts, projects }: HomeProps) {
                   </div>
                 </Section>
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
         <div
@@ -61,7 +61,7 @@ export default function Home({ posts, projects }: HomeProps) {
           style={{ "--index": 3 } as React.CSSProperties}
         >
           <h2>Selected posts</h2>
-          <PostList posts={posts} />
+          {/* <PostList posts={posts} /> */}
           <Link href="/blog" className="items-start underline">
             See all →
           </Link>

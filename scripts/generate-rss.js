@@ -6,9 +6,9 @@ const matter = require("gray-matter");
 
 async function generate() {
   const feed = new RSS({
-    title: "winklesen Kraft",
-    site_url: "https://winklesenkraft.com",
-    feed_url: "https://winklesenkraft.com/feed.xml",
+    title: "winklesen ",
+    site_url: "https://winklesen.com",
+    feed_url: "https://winklesen.com/feed.xml",
   });
 
   const posts = await fs.readdir(path.join(__dirname, "..", "data", "blog"));
@@ -22,7 +22,7 @@ async function generate() {
 
       feed.item({
         title: frontmatter.data.title,
-        url: "https://winklesenkraft.com/blog/" + name.replace(/\.mdx?/, ""),
+        url: "https://winklesen.com/blog/" + name.replace(/\.mdx?/, ""),
         date: frontmatter.data.publishedAt,
         description: frontmatter.data.summary,
       });

@@ -18,9 +18,9 @@ const Tag = ({ posts }: TagProps): JSX.Element => {
   const { slug } = query as { slug: string };
   const tag = slug.replace("-", " ");
 
-  const seoTitle = `${tag} | winklesen Kraft`;
+  const seoTitle = `${tag} | winklesen `;
   const seoDesc = `Posts &amp; tutorials about ${tag}`;
-  const url = `https://winklesenkraft.com/blog/tag/${tag}`;
+  const url = `https://winklesen.com/blog/tag/${tag}`;
 
   return (
     <>

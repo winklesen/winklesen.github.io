@@ -7,9 +7,9 @@ import Input from "components/input";
 import { useState } from "react";
 import { IconSearch } from "components/Icons";
 
-const seoTitle = "Blog | winklesen Kraft";
+const seoTitle = "Blog | winklesen ";
 const seoDesc =
-  "I write about development, design, React, CSS, animation and more!";
+  "I write about Android, Kotlin, Flutter and other mobile development topics.";
 
 type BlogProps = {
   posts: Post[];
@@ -31,9 +31,9 @@ export default function Blog({ posts }: BlogProps) {
         description={seoDesc}
         openGraph={{
           title: seoTitle,
-          url: `https://winklesenkraft.com/blog/`,
+          url: `https://winklesen.com/`,
           description: seoDesc,
-          site_name: "winklesen Kraft",
+          site_name: "winklesen ",
         }}
         twitter={{
           cardType: "summary_large_image",
@@ -47,7 +47,7 @@ export default function Blog({ posts }: BlogProps) {
               className="text-secondary animate-in"
               style={{ "--index": 1 } as React.CSSProperties}
             >
-              I write about CSS, animation techniques, design systems and more.
+                I write about Android, Kotlin, Flutter and other mobile development topics
             </p>
           </div>
           <div
