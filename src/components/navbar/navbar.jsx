@@ -41,9 +41,9 @@ export default function Navbar() {
 
   const navbarText = [
     { text: "Home", href: "/", number: "01" },
-    { text: "About", href: "/", number: "02" },
-    { text: "Projects", href: "/", number: "03" },
-    { text: "Blog", href: "/", number: "04" },
+    { text: "About", href: "/about", number: "02" },
+    { text: "Projects", href: "/projects", number: "03" },
+    { text: "Blog", href: "#", number: "04" },
   ];
 
   return (
