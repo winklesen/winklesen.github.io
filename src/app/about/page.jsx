@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sam from "@images/profile.jpg";
+import sam from "@images/profile_cyber.png";
 import { tools, stacks } from "@/utils/datas";
 import CardAbout from "@/components/card/card-about";
 import Experience from "./experience/experience";
